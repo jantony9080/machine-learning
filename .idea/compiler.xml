@@ -8,6 +8,8 @@
       <module name="data-storage_test" target="1.8" />
       <module name="learning-neural_main" target="1.8" />
       <module name="learning-neural_test" target="1.8" />
+      <module name="learning-svm-library_main" target="1.8" />
+      <module name="learning-svm-library_test" target="1.8" />
       <module name="learning-svm_main" target="1.8" />
       <module name="learning-svm_test" target="1.8" />
       <module name="machine-learning_main" target="1.8" />

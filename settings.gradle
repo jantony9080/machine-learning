@@ -4,4 +4,5 @@ include 'data-storage'
 include 'learning-svm'
 include 'learning-neural'
 include 'process-manager'
+include 'learning-svm-library'
 

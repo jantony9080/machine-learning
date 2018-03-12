@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/learning-neural/learning-neural_main.iml" filepath="$PROJECT_DIR$/.idea/modules/learning-neural/learning-neural_main.iml" group="learning-neural" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/learning-neural/learning-neural_test.iml" filepath="$PROJECT_DIR$/.idea/modules/learning-neural/learning-neural_test.iml" group="learning-neural" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/learning-svm.iml" filepath="$PROJECT_DIR$/.idea/modules/learning-svm.iml" group="learning-svm" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/learning-svm-library.iml" filepath="$PROJECT_DIR$/.idea/modules/learning-svm-library.iml" group="learning-svm-library" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/learning-svm/learning-svm_main.iml" filepath="$PROJECT_DIR$/.idea/modules/learning-svm/learning-svm_main.iml" group="learning-svm" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/learning-svm/learning-svm_test.iml" filepath="$PROJECT_DIR$/.idea/modules/learning-svm/learning-svm_test.iml" group="learning-svm" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/machine-learning.iml" filepath="$PROJECT_DIR$/.idea/modules/machine-learning.iml" />
