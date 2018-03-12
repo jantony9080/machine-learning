@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="data-model_main" target="1.8" />
+      <module name="data-model_test" target="1.8" />
+      <module name="data-storage_main" target="1.8" />
+      <module name="data-storage_test" target="1.8" />
+      <module name="learning-neural_main" target="1.8" />
+      <module name="learning-neural_test" target="1.8" />
+      <module name="learning-svm_main" target="1.8" />
+      <module name="learning-svm_test" target="1.8" />
+      <module name="machine-learning_main" target="1.8" />
+      <module name="machine-learning_test" target="1.8" />
+      <module name="process-manager_main" target="1.8" />
+      <module name="process-manager_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
