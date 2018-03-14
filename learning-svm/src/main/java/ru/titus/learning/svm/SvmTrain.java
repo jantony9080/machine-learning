@@ -1,21 +1,24 @@
-package ru.titus.svm;
+package ru.titus.learning.svm;
 
 import libsvm.*;
-import java.io.*;
-import java.util.*;
 
-public class SvmStarter {
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.StringTokenizer;
+import java.util.Vector;
 
+public class SvmTrain {
     private svm_parameter param;		// set by parse_command_line
     private svm_problem prob;		// set by read_problem
     private svm_model model;
-    private String input_file_name;		// set by parse_command_line
-    private String model_file_name;		// set by parse_command_line
+    private static String INPUT_FILE_NAME="/home/titus/Desktop/train models/bodyfat_1.txt";		// set by parse_command_line
+    private static String MODEL_FILE_NAME="model.txt";		// set by parse_command_line
     private String error_msg;
     private int cross_validation;
     private int nr_fold;
 
-    private void run(){
+    public void run(){
         int i;
         svm_print_interface print_func = null;	// default printing to stdout
 
@@ -37,8 +40,6 @@ public class SvmStarter {
         param.weight_label = new int[0];
         param.weight = new double[0];
         cross_validation = 0;
-        input_file_name="input.txt";
-        model_file_name="model.txt";
         try {
             read_problem();
             error_msg = svm.svm_check_parameter(prob,param);
@@ -53,9 +54,9 @@ public class SvmStarter {
             }
             else {
                 model = svm.svm_train(prob,param);
-                svm.svm_save_model(model_file_name,model);
+                svm.svm_save_model(MODEL_FILE_NAME,model);
             }
-            }
+        }
         catch (IOException exception){}
     }
 
@@ -99,7 +100,7 @@ public class SvmStarter {
 
     private void read_problem() throws IOException
     {
-        BufferedReader fp = new BufferedReader(new FileReader(input_file_name));
+        BufferedReader fp = new BufferedReader(new FileReader(INPUT_FILE_NAME));
         Vector<Double> vy = new Vector<Double>();
         Vector<svm_node[]> vx = new Vector<svm_node[]>();
         int max_index = 0;
@@ -169,5 +170,4 @@ public class SvmStarter {
     {
         return Integer.parseInt(s);
     }
-
 }

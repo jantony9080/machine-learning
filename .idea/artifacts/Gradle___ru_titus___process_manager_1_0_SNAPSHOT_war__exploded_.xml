@@ -88,6 +88,11 @@
           <element id="library" level="project" name="Gradle: org.apache.commons:commons-lang3:3.7" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.9.0" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.9.4" />
+          <element id="archive" name="ru.titus-learning-svm-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="learning-svm_main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/learning-svm/out/production/resources" />
+          </element>
+          <element id="file-copy" path="$PROJECT_DIR$/learning-svm-library/libs/libsvm.jar" />
         </element>
       </element>
     </root>
